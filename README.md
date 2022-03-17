@@ -2,6 +2,7 @@
 :---: | :---: | :---
 
 Plyr is a simple, lightweight, accessible and customizable HTML5, YouTube and Vimeo media player that supports [_modern_](#browser-support) browsers.
+Plyr — это простой, легкий, доступный и настраиваемый медиаплеер HTML5, YouTube и Vimeo, который поддерживает [_modern_](#browser-support) браузеры.
 
 [Checkout the demo](https://plyr.io) - [Donate](#donate) - [Slack](https://bit.ly/plyr--chat)
 
