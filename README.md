@@ -83,19 +83,19 @@ Plyr расширяет стандартную разметку [элемент 
 </div>
 ```
 
-_Note_: The `plyr__video-embed` classname will make the player a responsive 16:9 (most common) iframe embed. When plyr itself kicks in, your custom `ratio` config option will be used.
+_Примечание_: имя класса `plyr__video-embed` сделает проигрыватель адаптивным встраиванием iframe с соотношением сторон 16:9 (наиболее распространенное). Когда запустится сам plyr, будет использована ваша пользовательская опция конфигурации `ratio`.
 
-Or the `<div>` non progressively enhanced method:
+Или метод `<div>` без прогрессивного расширения:
 
 ```html
 <div id="player" data-plyr-provider="youtube" data-plyr-embed-id="bTqVqk7FSmY"></div>
 ```
 
-_Note_: The `data-plyr-embed-id` can either be the video ID or URL for the media.
+_Примечание_: `data-plyr-embed-id` может быть либо идентификатором видео, либо URL-адресом медиафайла.
 
 ### Vimeo
 
-Much the same as YouTube above.
+Почти так же, как YouTube выше.
 
 ```html
 <div class="plyr__video-embed" id="player">
@@ -108,7 +108,7 @@ Much the same as YouTube above.
 </div>
 ```
 
-Or the `<div>` non progressively enhanced method:
+Или метод `<div>` без прогрессивного расширения:
 
 ```html
 <div id="player" data-plyr-provider="vimeo" data-plyr-embed-id="76979871"></div>
@@ -116,7 +116,7 @@ Or the `<div>` non progressively enhanced method:
 
 ## JavaScript
 
-You can use Plyr as an ES6 module as follows:
+Вы можете использовать Plyr в качестве модуля ES6 следующим образом:
 
 ```javascript
 import Plyr from 'plyr';
@@ -124,7 +124,7 @@ import Plyr from 'plyr';
 const player = new Plyr('#player');
 ```
 
-Alternatively you can include the `plyr.js` script before the closing `</body>` tag and then in your JS create a new instance of Plyr as below.
+В качестве альтернативы вы можете включить скрипт `plyr.js` перед закрывающим тегом `</body>`, а затем в своем JS создать новый экземпляр Plyr, как показано ниже.
 
 ```html
 <script src="path/to/plyr.js"></script>
@@ -133,15 +133,15 @@ Alternatively you can include the `plyr.js` script before the closing `</body>` 
 </script>
 ```
 
-See [initialising](#initialising) for more information on advanced setups.
+См. [initialising](#initialising) для получения дополнительной информации о дополнительных настройках.
 
-You can use our CDN (provided by [Fastly](https://www.fastly.com/)) for the JavaScript. There's 2 versions; one with and one without [polyfills](#polyfills). My recommendation would be to manage polyfills separately as part of your application but to make life easier you can use the polyfilled build.
+Вы можете использовать нашу CDN (предоставленную [Fastly](https://www.fastly.com/)) для JavaScript. Есть 2 версии; один с и один без [polyfills](#polyfills). Я бы порекомендовал управлять полифиллами отдельно как часть вашего приложения, но чтобы упростить жизнь, вы можете использовать полифилл-сборку.
 
 ```html
 <script src="https://cdn.plyr.io/3.6.12/plyr.js"></script>
 ```
 
-...or...
+...или...
 
 ```html
 <script src="https://cdn.plyr.io/3.6.12/plyr.polyfilled.js"></script>
@@ -149,13 +149,13 @@ You can use our CDN (provided by [Fastly](https://www.fastly.com/)) for the Java
 
 ## CSS
 
-Include the `plyr.css` stylesheet into your `<head>`.
+Включите таблицу стилей `plyr.css` в ваш `<head>`.
 
 ```html
 <link rel="stylesheet" href="path/to/plyr.css" />
 ```
 
-If you want to use our CDN (provided by [Fastly](https://www.fastly.com/)) for the default CSS, you can use the following:
+Если вы хотите использовать нашу CDN (предоставленную [Fastly](https://www.fastly.com/)) для CSS по умолчанию, вы можете использовать следующее:
 
 ```html
 <link rel="stylesheet" href="https://cdn.plyr.io/3.6.12/plyr.css" />
@@ -163,30 +163,30 @@ If you want to use our CDN (provided by [Fastly](https://www.fastly.com/)) for t
 
 ## SVG Sprite
 
-The SVG sprite is loaded automatically from our CDN (provided by [Fastly](https://www.fastly.com/)). To change this, see the [options](#options) below. For
-reference, the CDN hosted SVG sprite can be found at `https://cdn.plyr.io/3.6.12/plyr.svg`.
+Спрайт SVG автоматически загружается из нашего CDN (предоставляется [Fastly](https://www.fastly.com/)). Чтобы изменить это, см. [options](#options) ниже. Для
+Ссылка, спрайт SVG, размещенный в CDN, можно найти по адресу `https://cdn.plyr.io/3.6.12/plyr.svg`.
 
 # Ads
 
-Plyr has partnered up with [vi.ai](https://vi.ai/publisher-video-monetization/?aid=plyrio) to offer monetization options for your videos. Getting setup is easy:
+Plyr сотрудничает с [vi.ai](https://vi.ai/publisher-video-monetization/?aid=plyrio), чтобы предлагать варианты монетизации ваших видео. Получить настройку легко:
 
-- [Sign up for a vi.ai account](https://vi.ai/publisher-video-monetization/?aid=plyrio)
-- Grab your publisher ID from the code snippet
-- Enable ads in the [config options](#options) and enter your publisher ID
+- [Зарегистрируйте учетную запись vi.ai](https://vi.ai/publisher-video-monetization/?aid=plyrio)
+- Возьмите свой идентификатор издателя из фрагмента кода.
+- Включите рекламу в [опциях конфигурации](#options) и введите свой идентификатор издателя.
 
-Any questions regarding the ads can be sent straight to vi.ai and any issues with rendering raised through GitHub issues.
+Любые вопросы, касающиеся рекламы, можно отправлять прямо на vi.ai, а любые проблемы с рендерингом — через вопросы GitHub.
 
-If you do not wish to use Vi, you can set your own `ads.tagUrl` [option](#options).
+Если вы не хотите использовать Vi, вы можете установить свой собственный `ads.tagUrl` [option](#options).
 
-# Advanced
+# Продвинутые настройки
 
-## Customizing the CSS
+## Настройка CSS
 
-If you want to change any design tokens used for the rendering of the player, you can do so using [CSS Custom Properties](https://developer.mozilla.org/en-US/docs/Web/CSS/Using_CSS_custom_properties).
+Если вы хотите изменить какие-либо маркеры дизайна, используемые для рендеринга проигрывателя, вы можете сделать это с помощью [CSS Custom Properties] (https://developer.mozilla.org/en-US/docs/Web/CSS/Using_CSS_custom_properties).
 
-Here's a list of the properties and what they are used for:
+Вот список свойств и то, для чего они используются:
 
-| Name                                           | Description                                                                                             | Default / Fallback                                                    |
+| Наименование                                           | Описание                                                                                            | По умолчанию/Резервный                                              |
 | ---------------------------------------------- | ------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------- |
 | `--plyr-color-main`                            | The primary UI color.                                                                                   | ![#f03c15](https://place-hold.it/15/00b3ff/000000?text=+) `#00b3ff`   |
 | `--plyr-video-background`                      | The background color of video and poster wrappers for using alpha channel videos and poster images.     | `rgba(0, 0, 0, 1)`                                                    |
@@ -252,7 +252,7 @@ Here's a list of the properties and what they are used for:
 | `--plyr-line-height`                           | The line height used within the player.                                                                 | `1.7`                                                                 |
 | `--plyr-font-smoothing`                        | Whether to enable font antialiasing within the player.                                                  | `false`                                                               |
 
-You can set them in your CSS for all players:
+Вы можете установить их в своем CSS для всех игроков:
 
 ```css
 :root {
@@ -260,7 +260,7 @@ You can set them in your CSS for all players:
 }
 ```
 
-...or for a specific class name:
+... или для определенного имени класса:
 
 ```css
 .player {
@@ -268,7 +268,7 @@ You can set them in your CSS for all players:
 }
 ```
 
-...or in your HTML:
+...или в вашем HTML:
 
 ```html
 <video class="player" style="--plyr-color-main: #1ac266;">...</video>
@@ -276,26 +276,26 @@ You can set them in your CSS for all players:
 
 ### Sass
 
-You can use `plyr.scss` file included in `/src/sass` as part of your build and change variables to suit your design. The Sass requires you to
-use [autoprefixer](https://www.npmjs.com/package/gulp-autoprefixer) (you should be already!) as all declarations use the W3C definitions.
+Вы можете использовать файл `plyr.scss`, включенный в `/src/sass`, как часть вашей сборки и изменить переменные в соответствии с вашим дизайном. Sass требует от вас
+используйте [autoprefixer](https://www.npmjs.com/package/gulp-autoprefixer) (вы уже должны это сделать!), поскольку все объявления используют определения W3C.
 
-The HTML markup uses the BEM methodology with `plyr` as the block, e.g. `.plyr__controls`. You can change the class hooks in the options to match any custom CSS
-you write. Check out the JavaScript source for more on this.
+Разметка HTML использует методологию БЭМ с «plyr» в качестве блока, например. `.plyr__controls`. Вы можете изменить хуки класса в параметрах, чтобы они соответствовали любому пользовательскому CSS.
+ты пишешь. Ознакомьтесь с исходным кодом JavaScript, чтобы узнать больше об этом.
 
 ## SVG
 
-The icons used in the Plyr controls are loaded in an SVG sprite. The sprite is automatically loaded from our CDN by default. If you already have an icon build
-system in place, you can include the source plyr icons (see `/src/sprite` for source icons).
+Значки, используемые в элементах управления Plyr, загружаются в спрайт SVG. По умолчанию спрайт автоматически загружается из нашего CDN. Если у вас уже есть сборка значка
+на месте, вы можете включить исходные значки plyr (см. `/src/sprite` для исходных значков).
 
-### Using the `iconUrl` option
+### Использование опции `iconUrl`
 
-You can however specify your own `iconUrl` option and Plyr will determine if the url is absolute and requires loading by AJAX/CORS due to current browser
-limitations or if it's a relative path, just use the path directly.
+Однако вы можете указать свою собственную опцию `iconUrl`, и Plyr определит, является ли URL-адрес абсолютным и требует загрузки с помощью AJAX/CORS из-за текущего браузера.
+ограничения или если это относительный путь, просто используйте путь напрямую.
 
-If you're using the `<base>` tag on your site, you may need to use something like this: [svgfixer.js](https://gist.github.com/leonderijke/c5cf7c5b2e424c0061d2)
+Если вы используете тег `<base>` на своем сайте, вам может понадобиться что-то вроде этого: [svgfixer.js](https://gist.github.com/leonderijke/c5cf7c5b2e424c0061d2)
 
-More info on SVG sprites here: [http://css-tricks.com/svg-sprites-use-better-icon-fonts/](http://css-tricks.com/svg-sprites-use-better-icon-fonts/) and the AJAX
-technique here: [http://css-tricks.com/ajaxing-svg-sprite/](http://css-tricks.com/ajaxing-svg-sprite/)
+Более подробная информация о спрайтах SVG здесь: [http://css-tricks.com/svg-sprites-use-better-icon-fonts/](http://css-tricks.com/svg-sprites-use-better- icon-fonts/) и AJAX
+техника здесь: [http://css-tricks.com/ajaxing-svg-sprite/](http://css-tricks.com/ajaxing-svg-sprite/)
 
 ## Cross Origin (CORS)
 
