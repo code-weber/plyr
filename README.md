@@ -1,47 +1,46 @@
-🎉 | [Plyr is merging into Vidstack](https://github.com/sampotts/plyr/issues/2408) | 🎉
+🎉 | [Plyr объединяется с Vidstack](https://github.com/sampotts/plyr/issues/2408) | 🎉
 :---: | :---: | :---
 
-Plyr is a simple, lightweight, accessible and customizable HTML5, YouTube and Vimeo media player that supports [_modern_](#browser-support) browsers.
-Plyr — это простой, легкий, доступный и настраиваемый медиаплеер HTML5, YouTube и Vimeo, который поддерживает [_modern_](#browser-support) браузеры.
+Plyr — это простой, легкий, доступный и настраиваемый медиаплеер HTML5, YouTube и Vimeo, который поддерживает [_современные_](#browser-support) браузеры.
 
-[Checkout the demo](https://plyr.io) - [Donate](#donate) - [Slack](https://bit.ly/plyr--chat)
+[Смотреть Демо](https://plyr.io) - [Пожеотвовать](#donate) - [Slack](https://bit.ly/plyr--chat)
 
-[![npm version](https://badge.fury.io/js/plyr.svg)](https://badge.fury.io/js/plyr) [![Gitpod Ready-to-Code](https://img.shields.io/badge/Gitpod-Ready--to--Code-blue?logo=gitpod)](https://gitpod.io/#https://github.com/sampotts/plyr) [![Financial Contributors on Open Collective](https://opencollective.com/plyr/all/badge.svg?label=financial+contributors)](https://opencollective.com/plyr)
+[![npm версия](https://badge.fury.io/js/plyr.svg)](https://badge.fury.io/js/plyr) [![Gitpod Ready-to-Code](https://img.shields.io/badge/Gitpod-Ready--to--Code-blue?logo=gitpod)](https://gitpod.io/#https://github.com/sampotts/plyr) [![Financial Contributors on Open Collective](https://opencollective.com/plyr/all/badge.svg?label=financial+contributors)](https://opencollective.com/plyr)
 
 [![Image of Plyr](https://cdn.plyr.io/static/demo/screenshot.png?v=3)](https://plyr.io)
 
-# Features
+# Преимущества
 
-- 📼 **HTML Video & Audio, YouTube & Vimeo** - support for the major formats
-- 💪 **Accessible** - full support for VTT captions and screen readers
-- 🔧 **[Customizable](#html)** - make the player look how you want with the markup you want
-- 😎 **Clean HTML** - uses the _right_ elements. `<input type="range">` for volume and `<progress>` for progress and well, `<button>`s for buttons. There's no
+- 📼 **HTML видео и аудио, YouTube и Vimeo** — поддержка основных форматов
+- 💪 **Доступность** — полная поддержка субтитров VTT и программ чтения с экрана
+- 🔧 **[Настраиваемый](#html)** - сделайте так, чтобы плеер выглядел так, как вы хотите, с нужной вам разметкой
+- 😎 **Чистый HTML** — использует _правильные_ элементы. `<input type="range">` для громкости и `<progress>` для прогресса и ну, `<button>` для кнопок. Нет никаких
   `<span>` or `<a href="#">` button hacks
-- 📱 **Responsive** - works with any screen size
-- 💵 **[Monetization](#ads)** - make money from your videos
-- 📹 **[Streaming](#demos)** - support for hls.js, Shaka and dash.js streaming playback
-- 🎛 **[API](#api)** - toggle playback, volume, seeking, and more through a standardized API
-- 🎤 **[Events](#events)** - no messing around with Vimeo and YouTube APIs, all events are standardized across formats
-- 🔎 **[Fullscreen](#fullscreen)** - supports native fullscreen with fallback to "full window" modes
-- ⌨️ **[Shortcuts](#shortcuts)** - supports keyboard shortcuts
-- 🖥 **Picture-in-Picture** - supports picture-in-picture mode
-- 📱 **Playsinline** - supports the `playsinline` attribute
-- 🏎 **Speed controls** - adjust speed on the fly
-- 📖 **Multiple captions** - support for multiple caption tracks
-- 🌎 **i18n support** - support for internationalization of controls
-- 👌 **[Preview thumbnails](#preview-thumbnails)** - support for displaying preview thumbnails
-- 🤟 **No frameworks** - written in "vanilla" ES6 JavaScript, no jQuery required
-- 💁‍♀️ **Sass** - to include in your build processes
+- 📱 **Отзывчивый** - работает с любым размером экрана
+- 💵 **[Монетизация](#ads)** — зарабатывайте на своих видео
+- 📹 **[Streaming](#demos)** - поддержка потокового воспроизведения hls.js, Shaka и dash.js
+- 🎛 **[API](#api)** — переключайте воспроизведение, громкость, поиск и т. д. с помощью стандартизированного API.
+- 🎤 **[Events](#events)** – не нужно возиться с API Vimeo и YouTube, все события стандартизированы для разных форматов.
+- 🔎 **[Полноэкранный режим](#fullscreen)** — поддерживает собственный полноэкранный режим с откатом к режимам «полного окна».
+- ⌨️ **[Shortcuts](#shortcuts)** — поддерживает сочетания клавиш
+- 🖥 **Картинка в картинке** — поддерживает режим «картинка в картинке».
+- 📱 **Playsinline** — поддерживает атрибут `playsinline`
+- 🏎 **Управление скоростью** - регулируйте скорость на лету
+- 📖 **Несколько титров** — поддержка нескольких дорожек титров.
+- 🌎 **i18n support** — поддержка интернационализации элементов управления
+- 👌 **[Эскизы предварительного просмотра](#preview-thumbnails)** — поддержка отображения миниатюр предварительного просмотра.
+- 🤟 **Без фреймворков** — написан на «ванильном» ES6 JavaScript, jQuery не требуется.
+- 💁‍♀️ **Sass** — для включения в процессы сборки
 
-### Demos
+### Демо
 
-You can try Plyr in Codepen using our minimal templates: [HTML5 video](https://codepen.io/pen?template=bKeqpr), [HTML5 audio](https://codepen.io/pen?template=rKLywR), [YouTube](https://codepen.io/pen?template=GGqbbJ), [Vimeo](https://codepen.io/pen?template=bKeXNq). For Streaming we also have example integrations with: [Dash.js](https://codepen.io/pen?template=GRoogML), [Hls.js](https://codepen.io/pen?template=oyLKQb) and [Shaka Player](https://codepen.io/pen?template=ZRpzZO)
+Вы можете попробовать Plyr в Codepen, используя наши минимальные шаблоны: [видео HTML5](https://codepen.io/pen?template=bKeqpr), [аудио HTML5](https://codepen.io/pen?template=rKLywR) , [YouTube](https://codepen.io/pen?template=GGqbbJ), [Vimeo](https://codepen.io/pen?template=bKeXNq). Для потоковой передачи у нас также есть примеры интеграции с: [Dash.js](https://codepen.io/pen?template=GRoogML), [Hls.js](https://codepen.io/pen?template=oyLKQb) и [Shaka Player](https://codepen.io/pen?template=ZRpzZO)
 
-# Quick setup
+# Быстрая установка
 
 ## HTML
 
-Plyr extends upon the standard [HTML5 media element](https://developer.mozilla.org/en-US/docs/Web/API/HTMLMediaElement) markup so that's all you need for those types.
+Plyr расширяет стандартную разметку [элемент мультимедиа HTML5] (https://developer.mozilla.org/en-US/docs/Web/API/HTMLMediaElement), так что это все, что вам нужно для этих типов.
 
 ### HTML5 Video
 
@@ -55,7 +54,7 @@ Plyr extends upon the standard [HTML5 media element](https://developer.mozilla.o
 </video>
 ```
 
-**Note**: The poster image should be specified using `data-poster`. This is to prevent it [being downloaded twice](https://github.com/sampotts/plyr/issues/1531). If you're sure the image will be cached, you can still use the `poster` attribute for true progressive enhancement.
+**Примечание**: Изображение плаката должно быть указано с помощью `data-poster`. Это сделано для того, чтобы предотвратить [загрузку дважды] (https://github.com/sampotts/plyr/issues/1531). Если вы уверены, что изображение будет кэшировано, вы все равно можете использовать атрибут `poster` для истинного прогрессивного улучшения.
 
 ### HTML5 Audio
 
@@ -66,11 +65,12 @@ Plyr extends upon the standard [HTML5 media element](https://developer.mozilla.o
 </audio>
 ```
 
-For YouTube and Vimeo players, Plyr uses progressive enhancement to enhance the default `<iframe>` embeds. Below are some examples. The `plyr__video-embed` classname will make the embed responsive. You can add the `autoplay`, `loop`, `hl` (YouTube only) and `playsinline` (YouTube only) query parameters to the URL and they will be set as config options automatically. For YouTube, the `origin` should be updated to reflect the domain you're hosting the embed on, or you can opt to omit it.
+Для проигрывателей YouTube и Vimeo Plyr использует прогрессивное улучшение для улучшения встраивания `<iframe>` по умолчанию. Ниже приведены некоторые примеры. Имя класса plyr__video-embed сделает вставку адаптивной. Вы можете добавить параметры запроса `autoplay`, `loop`, `hl` (только для YouTube) и `playsinline` (только для YouTube) к URL-адресу, и они будут автоматически установлены в качестве параметров конфигурации. Для YouTube «происхождение» должно быть обновлено, чтобы отразить домен, на котором вы размещаете вставку, или вы можете не указывать его.
 
 ### YouTube
 
-We recommend [progressive enhancement](https://www.smashingmagazine.com/2009/04/progressive-enhancement-what-it-is-and-how-to-use-it/) with the embedded players. You can elect to use an `<iframe>` as the source element (which Plyr will progressively enhance) or a bog standard `<div>` with two essential data attributes - `data-plyr-provider` and `data-plyr-embed-id`.
+Мы рекомендуем [прогрессивное улучшение] (https://www.smashingmagazine.com/2009/04/progressive-enhancement-what-it-is-and-how-to-use-it/) со встроенными проигрывателями. Вы можете использовать `<iframe>` в качестве исходного элемента (который Plyr будет постепенно улучшать) или стандартный `<div>` с двумя важными атрибутами данных – `data-plyr-provider` и `data-plyr-embed-id`.
+
 
 ```html
 <div class="plyr__video-embed" id="player">
